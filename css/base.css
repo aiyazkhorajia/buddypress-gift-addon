@@ -1,0 +1,272 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a img {
+  border: none; }
+
+/* =Global
+-------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #dedede;
+  color: #505050;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #dedede; }
+
+a:hover {
+  color: #dedede; }
+
+/* =Template
+-------------------------------------------------------------- */
+#wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+#main {
+  background-color: #fff;
+  padding: 30px 0; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px; }
+  
+.gift_col {
+    display: inline-block;
+	vertical-align: top;
+	border: 1px solid #7C7C90;
+    margin: 5px;
+    text-align: center;
+    width: 20%;
+	min-width:100px;
+}
+
+.borderbox{
+	border: 5px solid grey !important;
+}
+
+.gift-container{
+	width:100%;
+	border: 5px solid #dedede;
+	display: inline-block;
+}
+.gift-container ul{
+	padding:0;
+	margin:0;
+}
+.gift-container h4{
+	margin: 8px;
+}
+
+li.gift-content {
+    border: 2px solid #dfdfdf;
+    margin: 5px;
+	display: block;
+    float: left;
+    width: 23%; 
+    min-width: 120px;
+}
+.gift-content span {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+
+.gift-msg{
+	background: #dedede;
+	padding:5px 15px;
+}
+
+ul.received_gifts li {
+    list-style: none;
+    margin: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sent-gift-title .attachment-thumbnail.wp-post-image {
+    float: left;
+	
+}
+
+.received_gifts .attachment-thumbnail{
+	margin-right:15px;
+	border:1px solid #ddd;
+	max-width: 15%; 
+	width:100px;
+}
+.received_gifts .avatar {
+    float: right;
+	border-radius:0 !important;
+    max-width: 15%;
+	width:100px;
+}
+.gift-received-msg {
+    vertical-align: top;
+    width: 55%;
+    display: inline-block;
+}
+.gift-wrap{ margin: 10px 0;}
+#sender_msg { width:100%;}
+.gift-form input, select{
+	margin: 10px 0;
+}
+
+.gift-form  label{
+	display:block;
+}
+.form_submit{
+	width:30%;
+	margin:0;
+}
+.gift-form select {
+    width: 37%;
+    margin-right: 10px;
+}
+.gift-form {
+	border: 3px solid #dfdfdf;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+/* =Top Bar
+-------------------------------------------------------------- */
+#top-bar {
+  background-color: #289f77; }
+
+#top-bar a {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 10px; }
+
+#top-bar a:hover {
+  background-color: #dedede; }
+
+span.all-labs,
+span.back-to-tutorial {
+  display: block;
+  width: 50%; }
+
+span.all-labs {
+  float: left;
+  text-align: left; }
+
+span.back-to-tutorial {
+  float: right;
+  text-align: right; }
+
+/* =Header
+-------------------------------------------------------------- */
+header {
+  padding: 30px 0; }
+
+#title {
+  text-align: center; }
+
+#title h1 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px; }
+
+#title h2 {
+  color: #95e5ca;
+  font-size: 20px; }
+
+/* =Footer
+-------------------------------------------------------------- */
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 600px) {
+  .container {
+    width: 100%; }
+
+  #top-bar a {
+    display: block; }
+
+  span.all-labs,
+  span.back-to-tutorial {
+    width: 100%; }
+
+  span.all-labs,
+  span.back-to-tutorial {
+    float: none;
+    text-align: center; }
+
+  span.all-labs {
+    border-bottom: solid 1px #dedede; }
+
+  #title h1 {
+    font-size: 20px; }
+
+  #title h2 {
+    font-size: 16px; } }

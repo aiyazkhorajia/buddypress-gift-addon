@@ -1,0 +1,33 @@
+ul#tabs {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: center; }
+  ul#tabs li {
+    display: inline-block;
+    background-color: grey;
+    border-bottom: solid 5px #dedede;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    color: #fff;
+    cursor: pointer; }
+    ul#tabs li:hover {
+      background-color: #dedede; }
+    ul#tabs li.active {
+      background-color: #dedede; }
+
+ul#tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul#tab li {
+    display: none;
+    padding: 0;
+    border: solid 3px #dedede; }
+    ul#tab li.active {
+      display: block; }
+    ul#tab li h2 {
+      font-weight: 400;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      border-bottom: solid 5px grey; }
